@@ -4,6 +4,7 @@
  * @Date: 2019-10-03 12:04:32
  */
 #include <stdio.h>
+#include <string.h>
 
 void test(){
 
@@ -31,6 +32,7 @@ void test(){
 
     printf("p = %x\n", *p); //x是16进制显示
     printf("p + 1 = %x\n", *(p+1));
+
 }
 
 int main(){
