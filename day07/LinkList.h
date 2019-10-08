@@ -36,6 +36,8 @@ void Destroy_LinkList(struct LinkNode *header);
 //清空
 void Empty_LinkList(struct LinkNode *header);
 
+void Reverse_LinkList(struct LinkNode *header);
+
 
 #ifdef __cplusplus
 }

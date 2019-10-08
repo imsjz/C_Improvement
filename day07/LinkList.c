@@ -124,3 +124,24 @@ void Empty_LinkList(struct LinkNode *header){
     }
     header->next = NULL;
 }
+
+void Reverse_LinkList(struct LinkNode *header){
+    if(header == NULL){
+        return;
+    }
+    struct LinkNode *pPre = NULL;
+    struct LinkNode *pCurrent = header->next;
+    struct LinkNode *pNext = NULL;
+
+    while(pCurrent != NULL){
+
+        pNext = pCurrent->next;
+        pCurrent->next = pPre;
+
+        //移动
+        pPre = pCurrent;
+        pCurrent = pNext;
+        
+    }
+    header->next = pPre;
+}

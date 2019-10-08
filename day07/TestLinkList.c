@@ -17,12 +17,16 @@ void test01(){
     //插入数据
     InsertByValue_LinkList(header, 300, 999);
     printf("--------------------\n");
-    Foeach_LinkList(header);
-    //清空
-    Empty_LinkList(header);
-    Foeach_LinkList(header);
+    // Foeach_LinkList(header);
+    // //清空
+    // Empty_LinkList(header);
+    // Foeach_LinkList(header);
 
-    RemoveByValue_LinkList(header, 999);
+    // RemoveByValue_LinkList(header, 999);
+
+    //逆序
+    Reverse_LinkList(header);
+    Foeach_LinkList(header);
 }
 
 int main(int argc, char *argv[]){
